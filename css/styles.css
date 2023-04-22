@@ -1,0 +1,301 @@
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+img{
+    max-width: 100%; 
+    width: 450px;
+    height: 300px/*adpata el ancho maximo a todas las imagenes*/
+}
+
+/*selector de etiqueta
+se utiliza para estilos muy generales, es decir por ejemplo si quiero
+que todas las listas de mi pag html no tenga los puntos de navegacion la utilizo
+el estilo que utilice con el selctor de etiqueta se le aplica a todos 
+*/
+h1 { 
+    text-align: center;
+    font-style: italic;
+    
+}
+h2{
+    text-align: center;
+    margin-top: 200px;
+    margin-right: 100px;
+    color: black;
+    background-color: grey;
+}
+
+body{
+    background-color: #c5c5c5;
+    color: black;
+    
+}
+a{
+    text-decoration: none;
+    font-style:italic;
+    
+}
+
+header{
+    display: flex;
+    background-color: #232323;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .9;
+    position: sticky;
+    top:0
+    
+    
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+p{
+    font-style: italic;
+}
+
+/* selector id 
+no se le debe adr id a varias cosas, salvo que este en otra pagina html, 
+es decir.. en una ppagina html no puedo tener muchos id con el mismo nombre
+se utiliza para estilos unicos y se usa en header seccion, footter, div etc
+*/
+
+/* parrafo vienvenida del index - y ul (menu)
+*/
+#arriba p{
+    
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    background: grey;
+
+    
+    
+}
+#arriba ul{
+    list-style: none; /* es para sacarle el punto a las listas*/
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+/*selector class
+se invoca con un ., se puede utilizar varios en un mismo html para compartir estilos,
+ejemplo si quiero que el parrafo 1 y el 3 tengan el mismo color, se puede utilizar el 
+mismo nombre de class, cuando separas el nombre con espacio, el class te lo toma como
+si fueran dos estilos, por eso parasepara se usa asi letra-grande
+se utiliza para estilos reutilizables y se usa en parrafos, list h1 h2 etc
+*/
+
+.parrafo-grande {
+    font-size: 20px;
+    
+    
+}
+
+.parrafo-amarillo{
+    background-color: grey;
+}
+
+.section {
+    background-color:grey;
+}
+
+.rebelde{
+    background-color:grey;
+}
+
+#accesorios{
+    text-align: center;
+}
+
+
+/*accesorios /div de accesorios y margen de accesorios
+*/
+
+#accesorios{
+    background-color: grey;
+    /*margi, con 4 valores es como las agujas del reloj, el primero para arriba el 
+    segundo a la derecha etc,
+    con 2 valores es 40px (para arriba y abajo) 70px(para la derecha y arriba)
+    */
+
+    /*
+    
+    margin: 70px 500px;
+    con margin 0 auto, le estoy dando el tamaño 0 arriab y abajo y los lados que se
+    ajusten automaticamente, esto es para centrar
+    */
+    margin: 0 auto;
+    padding: 80px 20px;
+    width: 250px;  
+    height: 200px;
+    border: solid 5px black;
+}
+#margen-accesorios{
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/*galeria-div foto hombre - parrafo
+*/
+#foto-hombre{ background-color: grey;
+    
+    width: 300px;
+    height: 350px;
+    padding: 30px 30px;
+    margin: 100px auto;  
+    max-width: 100%;
+    border: solid 5px black;
+
+
+}
+/*galeria-div foto hombre - parrafo
+*/
+#mujer-hombre{
+    margin: 50px 50px;
+    justify-content: flex-start;
+}
+#mujer-hombre li{
+display: inline;
+background-color: grey;
+margin-left: 20px;
+
+}
+#mujer-hombre a{
+    color: black;
+}
+
+
+
+#foto-hombre p{
+    color: black;
+   
+
+}
+
+#foto-mujer{
+    background-color: grey;
+    width: 300px;
+    height: 350px;
+    margin: 100px auto;
+    padding: 30px 30px; 
+    max-width: 100%;
+    border: solid 5px black;
+  
+   
+}
+
+/* estilo de la card de accesorios y de ropa mujer de galeria
+*/
+.card{
+    position: relative;
+}
+.oferta{
+    position: absolute;
+    top: 0;
+    background-color: blue;
+    margin-left: 270px;
+    width: 100px;
+    
+}
+
+#lista-menu-galeria{
+    margin-bottom: 200px;
+    background-color: gray;
+}
+
+#foto-mujer p{
+color: black;
+}
+
+/* lista de menu
+*/
+.lista li{
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.lista{
+    /*posiciona en bloque como el display
+    valores de direccion: row, row-reverse, column y column reverse*/
+    list-style: none;
+    display: flex; 
+    justify-content: center; /* justify-content: space-around;separa el menu dejando un margen en la pantalla
+    similar al betwen. space evenly es similar a estos dos pero con un espacio menor entre ellos*/
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+
+.lista a{
+    color: black;
+    background-color: #c5c0c5;
+    padding: 5px 10px;
+    
+}
+
+
+/* display none es para desaparecer in elemento
+*/
+
+/* sobre nosotros, menu de navegacion quienes somos*/
+
+.menu-quienes-somos{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    
+}/* separa los elementos sin necesidad del margin posiciona
+
+    ndolo al final,
+    preguntar al profesor como agregar este efecto a el menu de quienes somos 
+    justify-content: center centra la lista* justify-content:space betwen, separa
+    los elementos entre si /
+   
+
+
+/*footer del index*/
+
+
+#footer-index{
+    margin-top: 450px;
+}
+.cuero{
+    background-color: #232323;
+}
+h3{
+    background-color: gray;
+    text-align: center;
+}
+.banner{
+    background-image: url(../images/ropa-accesorios-hombres-piso-madera_11304-1505.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 480px;
+    width: 100%;
+    background-attachment: fixed;
+}
+main{
+    margin: 50px 0  ;
+}
+.button{
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
